@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <title>Felix Flip Flop Game</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <a href="https://icons8.com/icon/OFHwDWASQWmX/coin"></a>
+  <!-- Template Main CSS File -->
+
+
+  <style>
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       color: white;
+       text-align: center;
+    }
+    </style>
+
+
+</head>
+
+<body style="background-color: #3b434a;">
+  <main id="main">
+  	
+	
+
+	
+
+	
+    <section id="breadcrumbs" class="breadcrumbs ">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-lg-10">
+              <h1 class="text-warning"><img src="https://img.icons8.com/emoji/65/000000/coin-emoji.png"/>Felix Flip Flop Game</h1> 
+             
+           <h2 class="text-center text-warning">{{message}}</h2><br>
+              <small class="text-light">If your bet amount is over or equal $1 and the last 2 number of
+                the winning batch is "99" you will get Jackpot Prize</small>
+            </div>
+            <div class="col-lg-2">
+              <br>
+                       <div id="google_translate_element"></div>
+
+              <script type="text/javascript">
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+              }
+              </script>
+              
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+              
+              <div class="card shadow border-0" style="background-color: #ffffff;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-left text-light" style="background-color: #525c66;">Jackpot Prize: ${{jp}}
+  
+                  </li>
+  
+  
+  
+  
+  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class=" col-lg-6 text-justify text-left mt-4">
+              <div class="card shadow border-0" style="background-color: #b4b4b4;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-left text-light" style="background-color: #18232e;">• How to play Felix
+                    Head Tail Game Work</li>
+                  <li class="list-group-item text-left text-light" style="background-color:#5782ad" >
+                    • Guess Head or Tail. <br>
+                    • Place your bet via our online payment processing software. <br>
+                    • If you guess correctly you win double the amount you bet. <br>
+                    • The winnings are instantly paid to your e-currency account!.
+                  </li>
+  
+  
+  
+  
+  
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class=" col-lg-6 text-justify text-left mt-4">
+              <div class="card shadow border-0" style="background-color: #ffffff;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-left text-light" style="background-color: #18232e;">• Place your bet below -
+                    Referrer: none</li>
+                  <li class="list-group-item text-left text-light" style="background-color:#5782ad">
+                    <div>
+  <form action="payment" method="post">
+    {% csrf_token %}
+
+                      <span>PLAY <img src="https://img.icons8.com/emoji/30/000000/coin-emoji.png"/></span>Bet <img src="https://img.icons8.com/ios/20/000000/coins.png"/> <select name="payment_amount" id="bet">
+                        <option value="1">$1</option>
+                        <option value="2">$2</option>
+                        <option value="5">$5</option>
+                        <option value="10">$10</option>
+                        <option value="15">$15</option>
+                        <option value="20">$20</option>
+                        <option value="25">$25</option>
+                        <option value="50">$50</option>
+                        <option value="100">$100</option>
+                        <option value="150">$150</option>
+                        <option value="200">$200</option>
+                        <option value="250">$250</option>
+                        <option value="500">$500</option>
+                      </select>--For--<select name="coinside" id="coinside">
+                        <option value="Head">Head</option>
+                        <option value="Tail">Tail</option>
+                      </select>  <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/25/000000/external-flip-graphic-design-justicon-lineal-color-justicon.png"/> <button class="btn text-dark" style="background-color: #00ff48;" type="submit">Flip Now</button>
+                    </div>
+                  </li>
+                </form>
+                  <li class="list-group-item text-left text-light" style="background-color:#5782ad">
+                    After completing payment you will be taken back to this site and will see the result of the game.
+                  </li>
+  
+  
+  
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6  mt-3 ">
+              <div class="card shadow border-0" style="background-color: #ffffff;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-left text-light" style="background-color: #18232e;">• PM Head Tail Game Referral
+                  </li>
+                  <li class="list-group-item text-left text-light" style="background-color:#5782ad">
+                    • Refer new players to our game and get 5% of bet of your referrals. Paid instantly and automatically
+                    to your Paypal account.
+                    <br>
+                    • Use your own referral link <br>
+                    http://felixflipflop.pythonanywhere.com//?pm=id
+                    Replace 'id' with your PM account number. You can not refer yourself! <br>
+                    • For example, if your Felix Flip Flop account number is U123456, use the address:
+                    http://felixflipflop.pythonanywhere.com//?pm=U123456 <br>
+                    • You are paid 5% of every bet amount for every player who has used that address to visit and play the
+                    game on our site. No questions asked from anyone.
+                    <br>
+  
+                  </li>
+  
+  
+  
+  
+  
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="row mt-3">
+                <div class="col-lg-6">
+                  <div class="card shadow border-0" style="background-color: #ffffff;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item text-left text-light" style="background-color: #18232e;">• Statistics
+                      </li>
+                      <li class="list-group-item text-left text-light" style="background-color:#5782ad">
+                        • Total Games: {{tg}} <br>
+                        • Total Head: {{th}} <br>
+                        • Total Tail:  {{tt}} <br>
+                        • Total Payout:  ${{tp}} <br>
+                        • Reserve:  ${{tr}}<br>
+  
+  
+                      </li>
+  
+  
+  
+  
+  
+                      </li>
+                    </ul>
+                  </div>
+  
+                </div>
+                <div class="col-lg-6">
+                  <table class="table table-bordered text-light" style="border-color:  #18232e;">
+                    <thead style="background-color: #18232e;">
+                      <tr>
+                        <th>Guess</th>
+                        <th>Bet</th>
+                        <th>Results</th>
+                      </tr>
+                    </thead>
+                    <tbody style="background-color:#5782ad">
+                      <tr>
+                        <td>{{gc}}</td>
+                        <td>{{ba}}</td>
+                        <td>{{gr}}</td>
+                      </tr>
+  
+                    </tbody>
+                  </table>
+  
+                </div>
+  
+  
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Breadcrumbs -->
+      <div class="footer">
+        <p>  © 2022 Felix- All Rights Reserved.
+                Developed by ASK</p>
+      </div>
+    </main>
+    
+  
+
+</body>
+
+</html>
